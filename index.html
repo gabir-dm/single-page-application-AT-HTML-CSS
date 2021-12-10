@@ -20,26 +20,27 @@
     <div id="container">
         <div id="top">        
             <header>
-                <h1><a href="#top">Dados Abertos</a></h1>
+                <h1><a href="#top">dados abertos</a></h1>
             </header>
             <nav>
                 <ul>
-                    <li><a href="./index.html" class="menuItem" title="Ir para a página Inicial">Início</a></li>
-                    <li><a href="#" class="menuItem" title="Pular para a seção Deputados">Deputados</a></li>
-                    <li><a href="#" class="menuItem" title="Pular para a seção Partidos">Partidos</a></li>
-                    <li><a href="#" class="menuItem" title="Pular para a seção Notícias">Notícias</a></li>
-                    <li><a href="#" class="menuItem" title="Pular para a seção Eventos">Eventos</a></li>
-                    <li><a href="#" class="menuItem" title="Pular para a seção Contato">Contato</a></li>
-                    <li><a href="./assessment.html" class="menuItem" title="Ir para a página Assessment">Assessment</a></li>
+                    <li><a href="./index.html" class="menuItem" title="Ir para a página Inicial">INICIO</a></li>
+                    <li><a href="#deputadosSec" class="menuItem" title="Pular para a seção Deputados">DEPUTADOS</a></li>
+                    <li><a href="#partidosSec" class="menuItem" title="Pular para a seção Partidos">PARTIDOS</a></li>
+                    <li><a href="#newsSec" class="menuItem" title="Pular para a seção Notícias">NOTÍCIAS</a></li>
+                    <li><a href="#eventsSec" class="menuItem" title="Pular para a seção Eventos">EVENTOS</a></li>
+                    <li><a href="#contactSec" class="menuItem" title="Pular para a seção Contato">CONTATO</a></li>
+                    <li><a href="./assessment.html" class="menuItem" title="Ir para a página Assessment">ASSESSMENT</a></li>
                 </ul>
             </nav>
         </div>
         <main>
         <section id="heroSec">
             <div id="hero">
-                <h2 id="heroText">Quem são os deputados</h2>
+                <img src="./img/plenario_da_camara.png" alt="Foto aérea da Câmara dos Deputados" id="imgHero">
+                <h2>QUEM SÃO OS DEPUTADOS</h2>
                 <p>Conheça os deputados, seus partidos e legislaturas.</p>
-                <button>Deputados</button>
+                <button onclick="window.location.href='#deputadosSec'">Deputados</button>
             </div>
         </section>
         <section id="deputadosSec">
@@ -294,9 +295,10 @@
             </div>
         </section>
         </main>
-        <footer>
-            <p>© Instituto Infnet - Assessment Interfaces Web</p>
-        </footer>
+        <div id="backTop"><a href="#top"><i class="fas fa-arrow-up"></i></a></div>
     </div>
+    <footer>
+        <p>© Instituto Infnet - Assessment Interfaces Web</p>
+    </footer>
 </body>
 </html>
