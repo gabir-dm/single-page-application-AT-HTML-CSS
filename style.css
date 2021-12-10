@@ -29,12 +29,16 @@ nav {
   width: 80%;
 }
 
-ul {
+nav ul {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   flex-wrap: wrap;
   list-style: none;
+}
+
+section {
+  margin-bottom: 50px;
 }
 
 .menuItem {
@@ -45,6 +49,55 @@ ul {
 
 .menuItem:hover {
   text-decoration: underline;
+}
+
+#resultsDeputados {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 20%;
+  margin: 2%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.info {
+  padding: 14px 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#socials {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 50%;
+  margin: 0;
+  padding: 0;
+}
+
+.fab {
+  color: #303030;
+}
+
+#resultsPartidos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cardPartido {
+  width: 20%;
+  margin: 2%;
 }
 
 footer {
@@ -67,7 +120,7 @@ footer {
     flex-wrap: wrap;
   }
 
-  ul {
+  nav ul {
     flex-direction: column;
   }
 }
