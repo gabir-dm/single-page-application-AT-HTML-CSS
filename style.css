@@ -324,7 +324,7 @@ td {
 
 #contactArea {
   display: flex;
-  flex: row;
+  flex-direction: row;
 }
 
 #contactText {
