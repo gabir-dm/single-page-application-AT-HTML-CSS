@@ -13,18 +13,18 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/60faaaf5c3.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="container">
         <div id="top">        
-            <header>
-                <h1><a href="#top">dados abertos</a></h1>
+            <header>                
+                <h1><a href="#top" id="logo"><img src="./img/logo.png" alt="Logo Dados Abertos" id="logoIcon">dados abertos</a></h1>
             </header>
             <nav>
                 <ul>
-                    <li><a href="./index.html" class="menuItem" title="Ir para a página Inicial">INICIO</a></li>
+                    <li><a href="./index.html" class="menuItem" title="Ir para a página Inicial">INÍCIO</a></li>
                     <li><a href="#deputadosSec" class="menuItem" title="Pular para a seção Deputados">DEPUTADOS</a></li>
                     <li><a href="#partidosSec" class="menuItem" title="Pular para a seção Partidos">PARTIDOS</a></li>
                     <li><a href="#newsSec" class="menuItem" title="Pular para a seção Notícias">NOTÍCIAS</a></li>
@@ -40,29 +40,30 @@
                 <img src="./img/plenario_da_camara.png" alt="Foto aérea da Câmara dos Deputados" id="imgHero">
                 <h2>QUEM SÃO OS DEPUTADOS</h2>
                 <p>Conheça os deputados, seus partidos e legislaturas.</p>
-                <button onclick="window.location.href='#deputadosSec'">Deputados</button>
+                <button onclick="window.location.href='#deputadosSec'" class="smallerBtn">DEPUTADOS</button>
             </div>
         </section>
         <section id="deputadosSec">
             <h3>Deputados</h3>
             <div id="searchDeputado">
                 <form action="" method="get">
-                    <label for="deputadoSearch" class="labelSearch">Consulte aqui os Deputados da Legislatura atual:</label>
+                    <p class="titleSearch">Consulte aqui os Deputados da Legislatura atual:</p>
                     <input type="text" name="deputadoSearch" id="deputadoSearch" placeholder="Nome do Deputado" required>
                 </form>
                 <button><i class="fas fa-search"></i> Buscar</button>
             </div>
             <div id="resultsDeputados">
                 <div class="card">
-                    <img src="#" alt="Foto do Deputado" class="imgDeputado">
+                    <!-- <img src="#" alt="Foto do Deputado" class="imgDeputado"> -->
+                    <i class="fas fa-user-tie"></i>
                     <div class="info">
                       <h4><b>Fulano de Tal<br>(PL-BA)</b></h4>
                       <p>Detalhes:</p>
-                      <ul>
+                      <ul class="details">
                           <li>Legislaturas em que exerceu mandato: <b>56ᵃ</b></li>
                           <li>Partidos pelos quais já foi deputado: <b>PL, PHS</b></li>
                       </ul>
-                      <ul id="socials">
+                      <ul class="socials">
                         <li><a href="#" class="socialLink"><i class="fab fa-facebook-f"></i></a></li>
                         <li><a href="#" class="socialLink"><i class="fab fa-twitter"></i></a></li>
                         <li><a href="#" class="socialLink"><i class="fab fa-instagram"></i></a></li>
@@ -70,15 +71,16 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="#" alt="Foto do Deputado" class="imgDeputado">
+                    <!-- <img src="#" alt="Foto do Deputado" class="imgDeputado"> -->
+                    <i class="fas fa-user-tie"></i>
                     <div class="info">
                       <h4><b>Fulano de Tal<br>(PL-BA)</b></h4>
                       <p>Detalhes:</p>
-                      <ul>
+                      <ul class="details">
                           <li>Legislaturas em que exerceu mandato: <b>56ᵃ</b></li>
                           <li>Partidos pelos quais já foi deputado: <b>PL, PHS</b></li>
                       </ul>
-                      <ul id="socials">
+                      <ul class="socials">
                         <li><a href="#" class="socialLink"><i class="fab fa-facebook-f"></i></a></li>
                         <li><a href="#" class="socialLink"><i class="fab fa-twitter"></i></a></li>
                         <li><a href="#" class="socialLink"><i class="fab fa-instagram"></i></a></li>
@@ -86,15 +88,16 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="#" alt="Foto do Deputado" class="imgDeputado">
+                    <!-- <img src="#" alt="Foto do Deputado" class="imgDeputado"> -->
+                    <i class="fas fa-user-tie"></i>
                     <div class="info">
                       <h4><b>Fulano de Tal<br>(PL-BA)</b></h4>
                       <p>Detalhes:</p>
-                      <ul>
+                      <ul class="details">
                           <li>Legislaturas em que exerceu mandato: <b>56ᵃ</b></li>
                           <li>Partidos pelos quais já foi deputado: <b>PL, PHS</b></li>
                       </ul>
-                      <ul id="socials">
+                      <ul class="socials">
                         <li><a href="#" class="socialLink"><i class="fab fa-facebook-f"></i></a></li>
                         <li><a href="#" class="socialLink"><i class="fab fa-twitter"></i></a></li>
                         <li><a href="#" class="socialLink"><i class="fab fa-instagram"></i></a></li>
@@ -102,15 +105,16 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="#" alt="Foto do Deputado" class="imgDeputado">
+                    <!-- <img src="#" alt="Foto do Deputado" class="imgDeputado"> -->
+                    <i class="fas fa-user-tie"></i>
                     <div class="info">
                       <h4><b>Fulano de Tal<br>(PL-BA)</b></h4>
                       <p>Detalhes:</p>
-                      <ul>
+                      <ul class="details">
                           <li>Legislaturas em que exerceu mandato: <b>56ᵃ</b></li>
                           <li>Partidos pelos quais já foi deputado: <b>PL, PHS</b></li>
                       </ul>
-                      <ul id="socials">
+                      <ul class="socials">
                         <li><a href="#" class="socialLink"><i class="fab fa-facebook-f"></i></a></li>
                         <li><a href="#" class="socialLink"><i class="fab fa-twitter"></i></a></li>
                         <li><a href="#" class="socialLink"><i class="fab fa-instagram"></i></a></li>
@@ -118,15 +122,16 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="#" alt="Foto do Deputado" class="imgDeputado">
+                    <!-- <img src="#" alt="Foto do Deputado" class="imgDeputado"> -->
+                    <i class="fas fa-user-tie"></i>
                     <div class="info">
                       <h4><b>Fulano de Tal<br>(PL-BA)</b></h4>
                       <p>Detalhes:</p>
-                      <ul>
+                      <ul class="details">
                           <li>Legislaturas em que exerceu mandato: <b>56ᵃ</b></li>
                           <li>Partidos pelos quais já foi deputado: <b>PL, PHS</b></li>
                       </ul>
-                      <ul id="socials">
+                      <ul class="socials">
                         <li><a href="#" class="socialLink"><i class="fab fa-facebook-f"></i></a></li>
                         <li><a href="#" class="socialLink"><i class="fab fa-twitter"></i></a></li>
                         <li><a href="#" class="socialLink"><i class="fab fa-instagram"></i></a></li>
@@ -134,15 +139,16 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="#" alt="Foto do Deputado" class="imgDeputado">
+                    <!-- <img src="#" alt="Foto do Deputado" class="imgDeputado"> -->
+                    <i class="fas fa-user-tie"></i>
                     <div class="info">
                       <h4><b>Fulano de Tal<br>(PL-BA)</b></h4>
                       <p>Detalhes:</p>
-                      <ul>
+                      <ul class="details">
                           <li>Legislaturas em que exerceu mandato: <b>56ᵃ</b></li>
                           <li>Partidos pelos quais já foi deputado: <b>PL, PHS</b></li>
                       </ul>
-                      <ul id="socials">
+                      <ul class="socials">
                         <li><a href="#" class="socialLink"><i class="fab fa-facebook-f"></i></a></li>
                         <li><a href="#" class="socialLink"><i class="fab fa-twitter"></i></a></li>
                         <li><a href="#" class="socialLink"><i class="fab fa-instagram"></i></a></li>
@@ -150,15 +156,16 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="#" alt="Foto do Deputado" class="imgDeputado">
+                    <!-- <img src="#" alt="Foto do Deputado" class="imgDeputado"> -->
+                    <i class="fas fa-user-tie"></i>
                     <div class="info">
                       <h4><b>Fulano de Tal<br>(PL-BA)</b></h4>
                       <p>Detalhes:</p>
-                      <ul>
+                      <ul class="details">
                           <li>Legislaturas em que exerceu mandato: <b>56ᵃ</b></li>
                           <li>Partidos pelos quais já foi deputado: <b>PL, PHS</b></li>
                       </ul>
-                      <ul id="socials">
+                      <ul class="socials">
                         <li><a href="#" class="socialLink"><i class="fab fa-facebook-f"></i></a></li>
                         <li><a href="#" class="socialLink"><i class="fab fa-twitter"></i></a></li>
                         <li><a href="#" class="socialLink"><i class="fab fa-instagram"></i></a></li>
@@ -166,15 +173,16 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="#" alt="Foto do Deputado" class="imgDeputado">
+                    <!-- <img src="#" alt="Foto do Deputado" class="imgDeputado"> -->
+                    <i class="fas fa-user-tie"></i>
                     <div class="info">
                       <h4><b>Fulano de Tal<br>(PL-BA)</b></h4>
                       <p>Detalhes:</p>
-                      <ul>
+                      <ul class="details">
                           <li>Legislaturas em que exerceu mandato: <b>56ᵃ</b></li>
                           <li>Partidos pelos quais já foi deputado: <b>PL, PHS</b></li>
                       </ul>
-                      <ul id="socials">
+                      <ul class="socials">
                         <li><a href="#" class="socialLink"><i class="fab fa-facebook-f"></i></a></li>
                         <li><a href="#" class="socialLink"><i class="fab fa-twitter"></i></a></li>
                         <li><a href="#" class="socialLink"><i class="fab fa-instagram"></i></a></li>
@@ -187,17 +195,18 @@
             <h3>Partidos</h3>
             <div id="searchPartido">
                 <form action="" method="get">
-                    <label for="partidoSearch" class="labelSearch">Consulte aqui os Partidos existentes:</label>
+                    <p class="titleSearch">Consulte aqui os Partidos existentes:</p>
                     <input type="text" name="partidoSearch" id="partidoSearch" placeholder="Nome do Partido" required>
                 </form>
                 <button><i class="fas fa-search"></i> Buscar</button>
             </div>
             <div id="resultsPartidos">
                 <div class="cardPartido">
-                    <img src="#" alt="Logo do Partido" class="imgPartido">
+                    <!-- <img src="#" alt="Logo do Partido" class="imgPartido"> -->
+                    <i class="fas fa-landmark"></i>
                     <div class="info">
                       <h4><b>Partido XPTO</b></h4>
-                      <ul id="socials">
+                      <ul class="socials">
                         <li><a href="#" class="socialLink"><i class="fab fa-facebook-f"></i></a></li>
                         <li><a href="#" class="socialLink"><i class="fab fa-twitter"></i></a></li>
                         <li><a href="#" class="socialLink"><i class="fab fa-instagram"></i></a></li>
@@ -205,10 +214,11 @@
                     </div>
                 </div>
                 <div class="cardPartido">
-                    <img src="#" alt="Logo do Partido" class="imgPartido">
+                    <!-- <img src="#" alt="Logo do Partido" class="imgPartido"> -->
+                    <i class="fas fa-landmark"></i>
                     <div class="info">
                       <h4><b>Partido XPTO</b></h4>
-                      <ul id="socials">
+                      <ul class="socials">
                         <li><a href="#" class="socialLink"><i class="fab fa-facebook-f"></i></a></li>
                         <li><a href="#" class="socialLink"><i class="fab fa-twitter"></i></a></li>
                         <li><a href="#" class="socialLink"><i class="fab fa-instagram"></i></a></li>
@@ -216,10 +226,11 @@
                     </div>
                 </div>
                 <div class="cardPartido">
-                    <img src="#" alt="Logo do Partido" class="imgPartido">
+                    <!-- <img src="#" alt="Logo do Partido" class="imgPartido"> -->
+                    <i class="fas fa-landmark"></i>
                     <div class="info">
                       <h4><b>Partido XPTO</b></h4>
-                      <ul id="socials">
+                      <ul class="socials">
                         <li><a href="#" class="socialLink"><i class="fab fa-facebook-f"></i></a></li>
                         <li><a href="#" class="socialLink"><i class="fab fa-twitter"></i></a></li>
                         <li><a href="#" class="socialLink"><i class="fab fa-instagram"></i></a></li>
@@ -227,10 +238,11 @@
                     </div>
                 </div>
                 <div class="cardPartido">
-                    <img src="#" alt="Logo do Partido" class="imgPartido">
+                    <!-- <img src="#" alt="Logo do Partido" class="imgPartido"> -->
+                    <i class="fas fa-landmark"></i>
                     <div class="info">
                       <h4><b>Partido XPTO</b></h4>
-                      <ul id="socials">
+                      <ul class="socials">
                         <li><a href="#" class="socialLink"><i class="fab fa-facebook-f"></i></a></li>
                         <li><a href="#" class="socialLink"><i class="fab fa-twitter"></i></a></li>
                         <li><a href="#" class="socialLink"><i class="fab fa-instagram"></i></a></li>
@@ -241,35 +253,39 @@
         </section>
         <section id="newsSec">
             <h3>Notícias</h3>
-            <img src="#" alt="" id="newsImg">
-            <h4>Comitiva da Câmara dos Deputados visita áreas queimadas no Pantanal</h4>
-            <p>A Câmara dos Deputados visita, de hoje de domingo (20), localidades atingidas pelos incêndios florestais no Pantanal mato-grossense. O grupo de parlamentares irá se reunir com entidades, bombeiros e gestores da região em busca de soluções para a grave emergência ambiental.</p>
-            <p id="newsSource">Fonte: Agência Câmara de Notícias/ 18/09/2020 - 16:01</p>
-            <button>Veja mais notícias</button>
+            <div id="news">
+                <img src="./img/noticia.jpg" alt="Foto de queimada na floresta" id="newsImg">
+                <div id="newsText">
+                    <h4>Comitiva da Câmara dos Deputados visita áreas queimadas no Pantanal</h4>
+                    <p>A Câmara dos Deputados visita, de hoje de domingo (20), localidades atingidas pelos incêndios florestais no Pantanal mato-grossense. O grupo de parlamentares irá se reunir com entidades, bombeiros e gestores da região em busca de soluções para a grave emergência ambiental.</p>
+                    <p id="newsSource">Fonte: Agência Câmara de Notícias/ 18/09/2020 - 16:01</p>
+                    <button>Veja mais notícias</button>
+                </div>
+            </div>
         </section>
         <section id="eventsSec">
             <h3>Eventos</h3>
+            <p class="titleSearch">Consulte aqui os Eventos agendados:</p>
             <div id="searchEvento">
                 <form action="" method="get">
-                    <label for="eventSearch" class="labelSearch">Consulte aqui os Eventos agendados:</label>
                     <input type="text" name="eventNameSearch" id="eventNameSearch" placeholder="Descrição do Evento">
                     <input type="text" name="eventDateSearch" id="eventDateSearch" placeholder="Data do Evento">
                 </form>
-                <button><i class="fas fa-search"></i> Buscar</button>
+                <button class="smallerBtn"><i class="fas fa-search"></i> Buscar</button>
             </div>
             <div id="resultsEvents">
                 <table class="tableEvent">
                     <tr>
-                        <td>22/09/2020<br>10:00</td>
-                        <td>CÂMARA DOS DEPUTADOS<br>
+                        <td class="tableDate"><i class="fas fa-calendar-alt"></i>22/09/2020<br><i class="fas fa-clock"></i>10:00</td>
+                        <td><strong>CÂMARA DOS DEPUTADOS</strong><br>
                             A atual situação da ANCINE - Evento Técnico<br>
                             Anexo II, Plenário 06</td>
                     </tr>
                 </table>
                 <table class="tableEvent">
                     <tr>
-                        <td>22/09/2020<br>10:00</td>
-                        <td>CÂMARA DOS DEPUTADOS<br>
+                        <td class="tableDate"><i class="fas fa-calendar-alt"></i>22/09/2020<br><i class="fas fa-clock"></i>10:00</td>
+                        <td><strong>CÂMARA DOS DEPUTADOS</strong><br>
                             A atual situação da ANCINE - Evento Técnico<br>
                             Anexo II, Plenário 06</td>
                     </tr>
@@ -279,19 +295,21 @@
         </section>
         <section id="contactSec">
             <h3>Contato</h3>
-            <div id="contactForm">
-                <form action="#" method="post">
-                    <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
-                    <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
-                    <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Mensagem"></textarea>
-                    <input type="submit" name="submit" id="submit">
-                </form>
-            </div> 
-            <div id="contactText">
-                <h4 id="contactTextTitle">Fale Conosco</h4>
-                <p>Deixe-nos suas críticas, elogios e sugestões!<br>
-                    Lorem ipsum dolor sit amet consectetur, adipiscing elit. Aliquam alias eum id esse odio rem, dicta repellendus fuga saepe magnam facilis illum sed. Eius ipsum, voluptas nemo dolorem temporibus excepturi?<br>
-                    Lorem ipsum dolor sit amet consectetur adipiscing elit. Deleniti voluptate est in quidem ad. Accusantium, eum. Velit accusamus repellat reprehenderit sing voluptate libero autem quasi, exercitationem iusto. Doloribus, sunt inventore?</p>
+            <div id="contactArea">
+                <div id="contactForm">
+                    <form action="#" method="post">
+                        <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
+                        <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
+                        <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Mensagem" required></textarea>
+                        <input type="submit" name="submit" id="submit">
+                    </form>
+                </div> 
+                <div id="contactText">
+                    <h4 id="contactTextTitle">Fale Conosco</h4>
+                    <p>Deixe-nos suas críticas, elogios e sugestões!<br><br>
+                        Lorem ipsum dolor sit amet consectetur, adipiscing elit. Aliquam alias eum id esse odio rem, dicta repellendus fuga saepe magnam facilis illum sed. Eius ipsum, voluptas nemo dolorem temporibus excepturi?<br><br>
+                        Lorem ipsum dolor sit amet consectetur adipiscing elit. Deleniti voluptate est in quidem ad. Accusantium, eum. Velit accusamus repellat reprehenderit sing voluptate libero autem quasi, exercitationem iusto. Doloribus, sunt inventore?</p>
+                </div>
             </div>
         </section>
         </main>

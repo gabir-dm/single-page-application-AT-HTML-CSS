@@ -8,37 +8,82 @@
     <meta name="keywords" content="xxxx; xxxx">
     <meta name="author" content="Gabriela Melo">  
         
-    <title>[Assessment - HTML/CSS] SPA - Assessment</title>
+    <title>[Assessment - HTML/CSS] SPA</title>
         
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/60faaaf5c3.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="container">
         <div id="top">        
-            <header>
-                <h1><a href="#">Dados Abertos</a></h1>
+            <header>                
+                <h1><a href="./index.html" id="logo"><img src="./img/logo.png" alt="Logo Dados Abertos" id="logoIcon">dados abertos</a></h1>
             </header>
             <nav>
                 <ul>
-                    <li><a href="./index.html" class="menuItem" title="Ir para a página Inicial">Início</a></li>
-                    <li><a href="#" class="menuItem" title="Pular para a seção Deputados">Deputados</a></li>
-                    <li><a href="#" class="menuItem" title="Pular para a seção Partidos">Partidos</a></li>
-                    <li><a href="#" class="menuItem" title="Pular para a seção Notícias">Notícias</a></li>
-                    <li><a href="#" class="menuItem" title="Pular para a seção Eventos">Eventos</a></li>
-                    <li><a href="#" class="menuItem" title="Pular para a seção Contato">Contato</a></li>
-                    <li><a href="./assessment.html" class="menuItem" title="Ir para a página Assessment">Assessment</a></li>
+                    <li><a href="./index.html" class="menuItem" title="Ir para a página Inicial">INÍCIO</a></li>
+                    <li><a href="./index.html#deputadosSec" class="menuItem" title="Pular para a seção Deputados">DEPUTADOS</a></li>
+                    <li><a href="./index.html#partidosSec" class="menuItem" title="Pular para a seção Partidos">PARTIDOS</a></li>
+                    <li><a href="./index.html#newsSec" class="menuItem" title="Pular para a seção Notícias">NOTÍCIAS</a></li>
+                    <li><a href="./index.html#eventsSec" class="menuItem" title="Pular para a seção Eventos">EVENTOS</a></li>
+                    <li><a href="./index.html#contactSec" class="menuItem" title="Pular para a seção Contato">CONTATO</a></li>
+                    <li><a href="./assessment.html" class="menuItem" title="Ir para a página Assessment">ASSESSMENT</a></li>
                 </ul>
             </nav>
         </div>
         <main>
-
+            <section id="heroSecAssess">
+                <div id="hero">
+                    <img src="./img/coverinfnet.png" alt="Foto da área interna do Instituto Infnet" id="imgHero">
+                    <h2>ASSESSMENT</h2>
+                    <p>Respostas para o Questionário</p>
+                </div>
+            </section>
+            <section id="answersAssess">
+                <div id="answers">
+                    <h4>1) Quando é recomendando a criação de um site separado para mobile? Seria este o caso do site integrado de Interfaces - SPA?</h4>
+                    <p>Geralmente não é recomendado a criação de um site separado apenas para dispositivos mobile. É preferível a manipulação dos elementos através da folha de estilos CSS para a criação de regras específicas que atendam à responsividade adequada para cada tipo de dispositivo que possa ir a acessar o site - de preferência através de media queries em uma única folha de estilo, e não a criação múltiplas folhas de estilo separadas. <br>Sim, para o modelo de site SPA de interfaces, esse seria o jeito ideal de lidar com a responsividade para aparelhos mobile.</p>
+                    <h4>2) No caso de um CSS específico para print, como ele deve ser inserido?</h4>
+                    <p>Apesar de ser possível a criação de um arquivo CSS específico para impressões, a forma mais correta seria através da inserção de media queries (neste caso, "@media print") ao final da folha de estilos principal, tal qual é feito para as estilizações específicas de responsividade de tela.</p>
+                    <h4>3) O elemento audio permite como elemento‐filho o elemento source. Quais são os atributos que o source permite e qual conteúdo eles suportam? Quais os outros atributos do elemento audio e quando devem ser utilizados?</h4>
+                    <p>O elemento-filho source, quando associado ao elemento audio, permite os atributos <strong>src</strong> (para definir o endereço de origem da mídia requisitada) e <strong>type</strong> (para definir o tipo de mídia vinculada e checar a possibilidade de sua execução). <br>Outros atributos presentes no elemento audio são <strong>autoplay</strong> (para que o audio comece a tocar assim que o elemento carregar), <strong>controls</strong> (para gerar botões de controle para o usuário), <strong>crossorigin</strong> (relacionado ao vínculo do endereço da mídia com o documento), <strong>disableremoteplayback</strong> (para impedir a reprodução do audio em dispositivos conectados remotamente ao dispositivo principal), <strong>loop</strong> (para o audio voltar ao começo e tocar novamente ao terminar sua reprodução), <strong>mute</strong> (gerando um valor booleano que controla se o áudio se inicia no mudo) e <strong>preload</strong> (que pode ser definido para que o navegador pre-carregue ou não a mídia para o cache).</p>
+                    <h4>4) O elemento video permite como elemento‐filho o elemento source. Quais são os atributos que o source permite e qual conteúdo eles suportam? Quais os outros atributos do elemento video e quando devem ser utilizados?</h4>
+                    <p>O elemento-filho source, quando associado ao elemento video, permite os atributos <strong>src</strong> (para definir o endereço de origem da mídia requisitada) e <strong>type</strong> (para definir o tipo de mídia vinculada e checar a possibilidade de sua execução). <br>Outros atributos presentes no elemento video são <strong>autoplay</strong> (para que o vídeo comece a tocar assim que o elemento carregar), <strong>autopictureinpicture</strong> (valor booleano que controla se o elemento vídeo gera uma visualização pequena do vídeo no caso do usuário trocar de tela durante a reprodução do mesmo), <strong>controls</strong> (para gerar botões de controle para o usuário) e <strong>controlslist</strong> (que permite trocar quais botões de controle disponíveis para o usuário), <strong>crossorigin</strong> (relacionado ao vínculo do endereço da mídia com o documento), <strong>disableremoteplayback</strong> (para impedir a reprodução do vídeo em dispositivos conectados remotamente ao dispositivo principal), <strong>height</strong> e <strong>width</strong> (para definir a altura e largura da área de visualização do vídeo), <strong>loop</strong> (para o vídeo voltar ao começo e passar novamente ao terminar sua reprodução), <strong>mute</strong> (gerando um valor booleano que controla se o áudio do vídeo se inicia silenciado), <strong>preload</strong> (que pode ser definido para que o navegador pre-carregue ou não a mídia para o cache), <strong>poster</strong> (que pode linkar para a url de uma imagem estática a ser exibida enquanto o vídeo carrega) e <strong>playsinline</strong> (para garantir que o vídeo será reproduzido dentro de sua área de playback definida).</p>
+                    <h4>5) No caso do canvas, HTML 5 nunca, em momento algum, fez qualquer animação. Isso porquê o HTML 5 é uma simples linguagem de marcação. Dessa forma, o que é necessário para criar animações com HTML5? O que são APIs do HTML5?</h4>
+                    <p>É possível criar animações para o HTML através de certos atributos no CSS e utilizando Javascript para a aplicação de APIs.<br> APIs (Application Programming Interface) são bibliotecas de parâmetros e protocolos pre-estabelecidos que podem ser chamadas e utilizadas para auxiliar no desenvolvimento nas mais diferentes tarefas através de solicitações remotas feitas do computador do usuário ao servidor onde a API se encontra. É uma forma segura de implementar novos componentes à uma aplicação.</p>
+                    <h4>6) Como o CSS3 pode ser aplicado na aparência da multimídia HTML5. Demonstre com um exemplo.</h4>
+                    <p>O CSS pode ser aplicado através do vínculo da folha de estilos com o documento HTML em questão. Ao assinalar classes ou ids aos elementos multimídia a serem alterados, é possível utilizar os parâmetros de estilo do CSS para alterar diversos aspectos dos elementos referenciados, tal qual tamanho do elemento, seu posicionamento na página, seu comportamento em relação ao hover do mouse, a estilização e formatação de seu texto, e até mesmo algumas animações simples como zoom, flip, fade e etc.</p>
+                    <h3>Extras</h3>
+                    <h4>Detalhe sua experiência nesse bloco em relação às disciplinas de Interfaces Web e Javascript.</h4>
+                    <p>Estava ansiosa pelo bloco de Front-End pois foi a única área que tive algum contato previamente (antes de entrar na Infnet), além de ter alguma curiosidade sobre como minha formação em design gráfico poderia ajudar ou influenciar na resolução de eventuais problemas. Acabei me surpreendendo positivamente com meu próprio desempenho, pois como este foi meu primeiro bloco da graduação, também estava apreensiva se conseguiria lidar com as demandas e prazos.<br>No geral a experiência foi positiva, sinto que aprendi bastante e desmistifiquei algumas coisas. Meus maiores desafios foram na resolução de alguns problemas propostos na aula de Javascript, mas sinto que aprendi bastante com a disciplina por conta própria também, e me vi bastante interessada no assunto em si, um pouco mais até do que Interfaces! Acredito que posso melhorar na organização do meu código, mas estou confiante de que com o tempo darei conta.</p>
+                    <h4>Como você vê o cenário atual de Desenvolvimento web? Detalhe oportunidades e desafios da área, e a sua vivência em relação aos mesmos.</h4>
+                    <p>O mercado está bastante aquecido e bem voltado para desenvolvedores web/front-end. Vejo muitas oportunidades de aprendizado, desde cursos aceleradores, programas de treinamento e vagas fornecidos pelas próprias empresas interessadas em 'pegar pra criar' os desenvolvedores novatos. Ainda não tenho experiência de trabalho na área, mas sinto que a graduação em ADS está me dando as bases que preciso para migrar de carreira, do design para desenvolvimento, mas tendo consciência também de que é necessário estudar por conta própria além da faculdade.</p>
+                    <h4>Contatos</h4>
+                    <div id="professionalContact">
+                        <div id="pic">
+                            <img src="./img/gabrielamelo.jpg" alt="Foto de Gabriela Melo" id="gabiPic">
+                        </div>
+                        <div id="infoContact">
+                            <h5>Gabriela Melo</h5>
+                            <p>Designer Gráfica • Estudante de ADS</p>
+                            <p><i class="far fa-envelope"></i>  dmelo.gabriela@gmail.com</p>
+                            <p><i class="fas fa-phone-alt"></i>  (21) 98090-5291</p>
+                            <a href="https://github.com/gabir-dm" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="https://www.linkedin.com/in/gabriela-dmelo/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                            <a href="https://behance.net/gdmelo" target="_blank"><i class="fab fa-behance-square"></i> Behance</a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
         </main>
-        <footer>
-            <p>© Gabriela Melo - 2021 - Assessment Interfaces com HTML e CSS</p>
-        </footer>
+        <div id="backTop"><a href="#top"><i class="fas fa-arrow-up"></i></a></div>
     </div>
+    <footer>
+        <p>© Instituto Infnet - Assessment Interfaces Web</p>
+    </footer>
 </body>
 </html>

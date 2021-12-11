@@ -1,6 +1,7 @@
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: #fafafa;
+  color: #797979;
 }
 
 #container {
@@ -20,6 +21,17 @@ body {
   flex-wrap: nowrap;
   width: 100%;
   z-index: 10000;
+}
+
+#logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#logoIcon {
+  width: 40px;
+  margin-right: 10px;
 }
 
 .fa-arrow-up {
@@ -43,12 +55,18 @@ body {
 }
 
 h1 {
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 
 h1 a {
   text-decoration: none;
   color: #ffffff;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #2b2f5f;
 }
 
 nav {
@@ -73,19 +91,25 @@ section {
 
 button,
 #submit {
-  padding: 10px 20px;
+  padding: 16px 30px;
   border: none;
   border-radius: 5px;
   background-color: #323985;
   color: #ffffff;
-  font-weight: bold;
+  font-weight: 700;
   margin: 15px;
   transition: 0.3s;
+  text-transform: uppercase;
+  width: 530px;
 }
 
 button:hover,
 #submit:hover {
   background-color: #2b2f5f;
+}
+
+.smallerBtn {
+  width: 150px;
 }
 
 #heroSec {
@@ -127,6 +151,116 @@ button:hover,
   color: #ddbb22;
 }
 
+.titleSearch {
+  font-size: 1.4em;
+  font-weight: 700;
+  color: #6e6e6e;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+input {
+  width: 500px;
+  height: 44px;
+  padding: 0 15px;
+  border: 1px solid #b3b3b3;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+textarea {
+  width: 500px;
+  padding: 10px 15px;
+  border: 1px solid #b3b3b3;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+#news {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+#newsImg {
+  width: 500px;
+  margin-right: 20px;
+  transition: 0.3s;
+}
+
+#newsImg:hover {
+  transform: scale(1.01);
+  opacity: 0.9;
+}
+
+#newsText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+
+#contactTextTitle,
+#newsText h4 {
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #6e6e6e;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+#newsText p {
+  padding: 0 15px;
+}
+
+#searchEvento {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+#eventNameSearch {
+  width: 400px;
+  margin-right: 30px;
+}
+
+#eventDateSearch {
+  width: 200px;
+  margin-right: 20px;
+}
+
+#resultsEvents {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+table {
+  margin: 20px 0;
+}
+
+td {
+  padding: 10px 10px;
+  text-align: left;
+}
+
+.tableDate {
+  border-right: 3px solid #171a3d;
+}
+
+.fa-calendar-alt,
+.fa-clock {
+  margin-right: 10px;
+}
+
+.fa-user-tie,
+.fa-landmark {
+  font-size: 8em;
+  color: #323985;
+}
+
 #resultsDeputados {
   display: flex;
   flex-wrap: wrap;
@@ -138,6 +272,8 @@ button:hover,
   transition: 0.3s;
   width: 200px;
   margin: 2%;
+  display: flex;
+  flex-direction: column;
 }
 
 .card:hover {
@@ -151,7 +287,12 @@ button:hover,
   align-items: center;
 }
 
-#socials {
+.details {
+  padding-left: 20px;
+  text-align: left;
+}
+
+.socials {
   list-style: none;
   display: flex;
   flex-direction: row;
@@ -162,7 +303,11 @@ button:hover,
 }
 
 .fab {
-  color: #303030;
+  color: #323985;
+}
+
+.fab:hover {
+  color: #ddbb22;
 }
 
 #resultsPartidos {
@@ -175,6 +320,66 @@ button:hover,
 .cardPartido {
   width: 200px;
   margin: 2%;
+}
+
+#contactArea {
+  display: flex;
+  flex: row;
+}
+
+#contactText {
+  text-align: left;
+}
+
+#answersAssess {
+  background-color: #fafafa;
+  opacity: 0.9;
+  border-radius: 20px;
+  padding: 40px;
+}
+
+#answers {
+  width: 100%;
+  text-align: left;
+}
+
+h5 {
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #323985;
+  margin: 0;
+}
+
+#professionalContact {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+}
+
+#pic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#infoContact {
+  text-align: left;
+  margin-left: 40px;
+}
+
+#infoContact a {
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+#infoContact a:hover {
+  color: #ddbb22;
+}
+
+#gabiPic {
+  width: 200px;
+  border-radius: 50%;
 }
 
 footer {
