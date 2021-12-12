@@ -6,7 +6,6 @@ function getDeps (url) {
     let request = new XMLHttpRequest()
     let depImg = document.querySelectorAll(".imgDeputado")
     let depName = document.querySelectorAll(".nameDep")
-    let depDetails = document.querySelectorAll(".details")
 
     request.open ("GET", url) 
     request.send()
@@ -16,6 +15,7 @@ function getDeps (url) {
 
         depImg.forEach((dep, i) =>{
             dep.setAttribute("src", depArray[i].urlFoto)
+            dep.setAttribute("title", depArray[i].nome)
         })
         depName.forEach((dep, i) =>{
             dep.innerHTML = `<b>${depArray[i].nome} <br> ${depArray[i].siglaPartido} - ${depArray[i].siglaUf}</b>`
