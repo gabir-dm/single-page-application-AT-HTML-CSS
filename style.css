@@ -395,6 +395,54 @@ footer {
 @media (max-width: 1024px) {
   #container {
     width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  #heroSec {
+    justify-content: center;
+    height: 350px;
+  }
+
+  #top {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  h4 {
+    margin: 0;
+  }
+
+  .info p {
+    margin: 10px 0 0 0;
+  }
+
+  #newsImg {
+    width: 80%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  #news {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #newsText p {
+    text-align: center;
+  }
+
+  .tableDate {
+    text-align: center;
+  }
+
+  #contactArea {
+    flex-direction: column-reverse;
+  }
+
+  #contactText {
+    text-align: center;
+    padding: 0 15px;
   }
 }
 
@@ -405,6 +453,59 @@ footer {
   }
 
   nav ul {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  section {
+    margin-bottom: 10px;
+  }
+
+  #heroSec {
+    justify-content: center;
+    height: 300px;
+  }
+
+  #imgHero {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50%;
+  }
+
+  #top ul {
+    padding-inline-start: 0px;
+  }
+
+  #hero h2 {
+    font-size: 2em;
+    text-shadow: #171a3d 0 4px;
+    margin-bottom: 10px;
+  }
+
+  #hero p {
+    font-size: 1em;
+  }
+
+  .titleSearch {
+    font-size: 1.2em;
+  }
+
+  #newsText p {
+    text-align: center;
+    padding: 20px;
+  }
+
+  #searchEvento {
+    align-items: center;
+  }
+
+  #eventNameSearch {
+    width: 80%;
+  }
+
+  #resultsEvents {
     flex-direction: column;
   }
 }
