@@ -1,4 +1,4 @@
-Web Page with API - Congress Transparency Portal
+# Web Page with API - Congress Transparency Portal
 
 A mostly non-functional Single Page Application created with HTML, CSS and Javascript as a small project for university.
 
